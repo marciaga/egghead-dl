@@ -20,9 +20,8 @@ const urls =
 
 for (let i of urls) {
     cp.fork(__dirname + '/node_modules/.bin/egghead-downloader', [
-        '-c',
-        i,
-        'webpack-videos'
+            i,
+            'videos/change-me' // name of output directory
         ]
     );
 }
